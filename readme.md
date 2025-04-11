@@ -6,7 +6,7 @@ The goal is to keep active and solve simple problems as best as possible by lear
 
 ## Projects
 
-1. Stoic quotes: a simple web app that shows a random stoic quote every time you refresh the page. It uses a sqlite3 database for storage, an API in PHP, and JS for the front end to get the quotes from API.
+1. [Stoic quotes](https://github.com/epcgrs/100daysofcode/tree/main/1): a simple web app that shows a random stoic quote every time you refresh the page. It uses a sqlite3 database for storage, an API in PHP, and JS for the front end to get the quotes from API.
 
 
 
