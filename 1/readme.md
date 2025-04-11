@@ -9,7 +9,7 @@
 ## How to run the project
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
 cd 1
 ``` 
