@@ -44,6 +44,13 @@
                 Frase Cristã
             </button>
         </div>
+        <!-- github icon -->
+        <a href="https://github.com/epcgrs/100daysofcode" target="_blank" style="display: inline-block; margin-top: 20px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 30px; height: 30px;">
+        </a>
+        <!-- by -->
+
+        <p>Desenvolvido por Emmanuelpcg</p>      
     </div>
 
     <script>
