@@ -1,33 +1,55 @@
 <?php
 
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: Content-Type');
 
-// Conexão com o banco de dados SQLite
-$db = new SQLite3('frases_estoicas.db');
-
-// Seleciona uma frase aleatória do banco de dados
-
-$query = 'SELECT frase, autor FROM frases_estoicas';
-
-if(isset($_GET['type']) && !empty($_GET['type'])) {
-    $type = $_GET['type'];
-    if ($type == 'cristã') {
-        $query .= ' WHERE type = "cristã"';
-    } elseif ($type == 'estoica') {
-        $query .= ' WHERE type = "estoica"';
+function getDatabaseConnection() {
+    try {
+        return new SQLite3('frases_estoicas.db', SQLITE3_OPEN_READONLY);
+    } catch (Exception $e) {
+        jsonResponse(['error' => 'Erro ao conectar ao banco de dados.'], 500);
+        exit;
     }
 }
-$query .= '  ORDER BY RANDOM() LIMIT 1';
+function getRandomQuote($db, $type = null) {
 
-$result = $db->query($query);
+    try{
+        $query = 'SELECT frase, autor FROM frases_estoicas';
+        if ($type && $type !== 'null') {
+            $query .= ' WHERE type = :type ';
+        }
+        $query .= ' ORDER BY RANDOM() LIMIT 1';
 
-if (!$result) {
-    echo json_encode(['error' => 'Erro ao buscar a frase.']);
+        $stmt = $db->prepare($query);
+
+        if ($type && $type !== 'null') {
+            $stmt->bindValue(':type', $type, SQLITE3_TEXT);
+        }
+
+        $result = $stmt->execute();
+
+        return $result->fetchArray(SQLITE3_ASSOC);
+    } catch (SQLite3Exception $e) {
+        jsonResponse(['error' => 'Erro ao executar a consulta. ' . $e->getMessage()], 500);
+    } catch (Exception $e) {
+        jsonResponse(['error' => 'Erro ao executar a consulta. ' . $e->getMessage()], 500);
+    } 
+}
+
+function jsonResponse($data, $statusCode = 200) {
+    http_response_code($statusCode);
+    echo json_encode($data);
     exit;
 }
 
-$frase_aleatoria = $result->fetchArray(SQLITE3_ASSOC);
+$db = getDatabaseConnection();
+$type = isset($_GET['type']) ? htmlspecialchars($_GET['type'], ENT_QUOTES, 'UTF-8') : null;
+$result = getRandomQuote($db, $type);
 
-// Retorna a frase em formato JSON
-echo json_encode(['frase' => $frase_aleatoria['frase'], 'autor' => $frase_aleatoria['autor']]);
-exit;
+if (!$result) {
+    jsonResponse(['error' => 'Nenhuma citação encontrada.'], 404);
+}
+
+jsonResponse(['frase' => $result['frase'], 'autor' => $result['autor']]);
