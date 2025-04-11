@@ -2,6 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frase Estoica do Dia - Uma citação inspiradora para o seu dia.">
+    <meta name="keywords" content="frase, estoica, citação, inspiração">
+    <meta name="author" content="Emmanuelpcg">
+    <meta name="theme-color" content="#4CAF50">
     <title>Frase Estoica do Dia</title>
     <style>
         body {
@@ -16,10 +21,22 @@
         }
         .container {
             background: white;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
             max-width: 600px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        em {
+            font-size: 1.2rem;
+            color: #555;
         }
     </style>
 </head>
