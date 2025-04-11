@@ -20,3 +20,8 @@ php -S localhost:8000
 ```
 
 3. Open your browser and go to `http://localhost:8000` to see the app in action.
+
+4. You can also run the API separately by going to `http://localhost:8000/api.php` to see the JSON response.
+
+5. You can administer the database using the `admin.php` file. This file allows you to add, edit, and delete quotes from the database. You can access it by going to `http://localhost:8000/admin.php`.
+
