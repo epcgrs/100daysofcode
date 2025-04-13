@@ -1,0 +1,327 @@
+html {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Added padding for better spacing */
+  font-size: 1.2em; /* Increased font size for better visibility */
+  align-items: center; /* Centered items vertically */
+}
+header .container {
+  display: flex; /* Changed to flex for better alignment */
+  align-items: center; /* Centered items vertically */
+}
+header h1 {
+  margin: 0;
+  font-size: 2em; /* Increased font size for better visibility */
+  color: white; /* Changed text color to white for better contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
+}
+header nav {
+  margin-left: auto; /* Aligns the nav to the right */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0; /* Removed bottom margin */
+  margin-top: 0; /* Removed top margin */
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px; /* Added padding for better click area */
+  border-radius: 5px; /* Added border radius for rounded corners */
+  transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Changed to relative for better positioning */
+  bottom: 0; /* Sticks to the bottom of the page */
+}
+
+section.home {
+  height: 59vh;
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.primary-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Increased font size for better visibility */
+  transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Added transition for smooth hover effect */
+  display: inline-block; /* Changed to inline-block for better alignment */
+  text-align: center; /* Centered text inside the button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.primary-button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+section.register {
+  height: 59vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#register-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increased font size for better visibility */
+}
+#register-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold; /* Made label text bold for better visibility */
+}
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em; /* Increased font size for better visibility */
+}
+#register-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Increased font size for better visibility */
+  transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+#register-form input[type="submit"]:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+#register-form .error {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.9em; /* Decreased font size for error message */
+}
+
+section.login {
+  height: 59vh; /* Set height for login section */
+  padding-top: 40px; /* Add padding to the top */
+  padding-bottom: 40px; /* Add padding to the bottom */
+  text-align: center; /* Center text inside the section */
+}
+#login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#login-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Increased font size for better visibility */
+}
+#login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold; /* Made label text bold for better visibility */
+}
+#login-form input[type="text"],
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em; /* Increased font size for better visibility */
+}
+#login-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Increased font size for better visibility */
+  transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+#login-form input[type="submit"]:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.9em; /* Decreased font size for error message */
+}
+.success-message {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 0.9em; /* Decreased font size for success message */
+}
+
+/* Estilo para o painel administrativo */
+section.Dashboard {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 80vh; /* Define uma altura mínima para o painel */
+}
+
+section.Dashboard h2 {
+  font-size: 1.8em; /* Aumenta o tamanho do título */
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.Dashboard p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.Dashboard .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+section.Dashboard form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section.Dashboard form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+section.Dashboard form input[type="text"],
+section.Dashboard form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+section.Dashboard form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+section.Dashboard form button:hover {
+  background-color: #45a049;
+}
+
+section.Dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+section.Dashboard table th,
+section.Dashboard table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+section.Dashboard table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+section.Dashboard table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+section.Dashboard table tr:hover {
+  background-color: #f1f1f1;
+}
+
+section.Dashboard table a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section.Dashboard table a:hover {
+  text-decoration: underline;
+}
+
+section.Dashboard .success-message {
+  color: green;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+section.Dashboard .error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
