@@ -23,6 +23,14 @@ Linkito is a URL shortener that allows you to create short links for long URLs. 
 - PHP 8.2 or higher
 - SQLITE
 
+## What I learned
+
+- Route handling in vanilla PHP
+- How to use SQLITE with PHP
+- How to use PHP sessions
+- How to use PHP to create a simple web app
+- How to implement user authentication
+
 ## Installation
 
 1. Clone the repository
