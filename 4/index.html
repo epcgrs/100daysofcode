@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nostr Chat</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #111;
+        color: #eee;
+      }
+      input,
+      textarea,
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        background: #222;
+        color: #eee;
+        border: none;
+        border-radius: 5px;
+      }
+      textarea {
+        height: 100px;
+      }
+      #messages {
+        margin-top: 20px;
+        border: 1px solid #444;
+        padding: 10px;
+        background: #1a1a1a;
+        height: 300px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nostr Chat</h1>
+
+    <label>🗝️ Sua chave privada (hex):</label>
+    <input type="text" id="privKey" placeholder="nsec... ou hex" />
+
+    <label>📬 PubKey do destinatário:</label>
+    <input type="text" id="receiverPubKey" placeholder="npub... ou hex" />
+
+    <label>💬 Mensagem:</label>
+    <textarea id="message"></textarea>
+
+    <button id="sendMessage">Enviar Mensagem</button>
+
+    <div id="messages"><strong>Mensagens:</strong></div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

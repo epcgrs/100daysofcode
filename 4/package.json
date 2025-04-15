@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "nostr-tools": "^2.12.0"
+  },
+  "name": "nostr-simplep2p-chat",
+  "version": "1.0.0",
+  "description": "A simple nostr app to send messages p2p",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.2.6"
+  }
+}
