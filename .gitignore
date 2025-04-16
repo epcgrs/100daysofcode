@@ -1,2 +1,8 @@
 **/node_modules/
 **/.next/
+**/.env
+**/.DS_Store
+**/.github
+**/.idea
+**/.vscode
+**/vendor
