@@ -17,3 +17,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 3. [🗒️ SnipShare](https://github.com/epcgrs/100daysofcode/tree/main/3): a simple and fast code snippet sharing tool. It allows you to share code snippets with others easily. It is built using Next.js and is designed to be simple and easy to use.
 
 4. [🟣 Nostr chat app](https://github.com/epcgrs/100daysofcode/tree/main/4): a simple and insecure* (see the 4/readme.md) chat app who uses NOSTR relay protocols to send and receive messages. It is built using Vite and is designed to be simple and easy to use.
+
+5. [✊🏽✋🏽✌🏽 Jokenpô](https://github.com/epcgrs/100daysofcode/tree/main/5): A rock paper scissors game built with Python.
