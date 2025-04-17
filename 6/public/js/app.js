@@ -11,7 +11,7 @@ $(document).ready(function() {
         // wait 1 seconds
         setTimeout(function() {
             $.post('/api/criar-invoice', {
-                data: JSON.stringify(data)
+                amount: data.amount
             }).done(function(response) {
                 const responseData = response;
                 console.log('Invoice created successfully:', responseData);
