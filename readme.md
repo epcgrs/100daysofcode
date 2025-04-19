@@ -23,3 +23,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 6. [⚡ Pay for a joke](https://github.com/epcgrs/100daysofcode/tree/main/6): a simple bitcoin lightning payments for a random joke.
 
 7. [📧 WP SMTP Mailer](https://github.com/epcgrs/100daysofcode/tree/main/7): a WordPress plugin for sending emails via SMTP.
+
+8. [🟠 Bitcoin Address Explorer](https://github.com/epcgrs/100daysofcode/tree/main/8): a Simple Explorer for Bitcoin TXs.
