@@ -25,3 +25,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 7. [📧 WP SMTP Mailer](https://github.com/epcgrs/100daysofcode/tree/main/7): a WordPress plugin for sending emails via SMTP.
 
 8. [🟠 Bitcoin Address Explorer](https://github.com/epcgrs/100daysofcode/tree/main/8): a Simple Explorer for Bitcoin TXs.
+
+9. [⛆ QR code generator](https://github.com/epcgrs/100daysofcode/tree/main/9): A Simple QR code text generator made with PHP.
