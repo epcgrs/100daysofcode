@@ -1,0 +1,13 @@
+{
+    "name": "epcgrs/taproot_address",
+    "description": "Generate and validate Taproot Addresses",
+    "authors": [
+        {
+            "name": "epcgrs",
+            "email": "emmanuelf988@gmail.com"
+        }
+    ],
+    "require": {
+        "simplito/elliptic-php": "^1.0"
+    }
+}
