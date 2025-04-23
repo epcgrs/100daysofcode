@@ -21,7 +21,7 @@ A Simple QR code text generator made with php
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/your-username/100daysOfCode.git
-    cd 100daysOfCode/9
+    cd 100daysOfCode/009
     ```
 2. **Run PHP Server**
 

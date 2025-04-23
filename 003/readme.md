@@ -21,7 +21,7 @@ A simple and fast code snippet sharing tool. It allows you to share code snippet
 ```bash
 git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
-cd 3
+cd 003
 ```
 
 2. Run the server in php

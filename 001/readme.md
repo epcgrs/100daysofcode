@@ -22,7 +22,7 @@
 ```bash
 git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
-cd 1
+cd 001
 ```
 
 2. Run the server in php

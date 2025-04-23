@@ -23,7 +23,7 @@ A simple bitcoin lightning payments for a random joke.
 ```bash
 git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
-cd 6
+cd 006
 ```
 
 2. Install the dependencies

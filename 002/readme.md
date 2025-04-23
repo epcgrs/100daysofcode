@@ -38,7 +38,7 @@ Linkito is a URL shortener that allows you to create short links for long URLs. 
 ```bash
 git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
-cd 2
+cd 002
 ```
 
 2. Run the server in php

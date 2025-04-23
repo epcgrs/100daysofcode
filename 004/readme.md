@@ -33,7 +33,7 @@ JS Chat app using Nostr protocol
 ```bash
 git clone https://github.com/epcgrs/100daysofcode.git
 cd 100daysofcode
-cd 4
+cd 004
 ```
 
 2. Run the server in php
