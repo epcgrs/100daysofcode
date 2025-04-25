@@ -104,6 +104,20 @@
             </tr>
         </table>
 
+        <h2>Temperature</h2>
+        <table>
+            {% for name, temps in system_info.temps.items() %}
+            <tr>
+                <th>{{ name }}</th>
+                <td>
+                    {% for temp in temps %}
+                        {{ temp.label }}: {{ temp.temp }}°C<br>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
         <h2>Load Average</h2>
         <table>
             <tr>

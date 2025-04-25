@@ -12,6 +12,12 @@ def home():
     memory = psutil.virtual_memory()
     disk = psutil.disk_usage('/')
     load_avg = psutil.getloadavg()
+    temps = psutil.sensors_temperatures()
+
+    tempsList = {}
+    for name, entries in temps.items():
+        tempsList[name] = [{"label": e.label, "temp": e.current} for e in entries]
+    
     
     # IP da máquina
     ip = socket.gethostbyname(socket.gethostname())
@@ -44,6 +50,7 @@ def home():
             "total": memory.total,
             "used": memory.used
         },
+        "temps": tempsList,
         "uptime": uptime_seconds
     }
 
