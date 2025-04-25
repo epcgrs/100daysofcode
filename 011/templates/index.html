@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .info {
+            margin: 20px;
+        }
+        .info h2 {
+            color: #333;
+        }
+        .info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info table, th, td {
+            border: 1px solid #ddd;
+        }
+        .info th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .info th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Server Status</h1>
+
+    <div class="info">
+        <h2>System Information</h2>
+        <table>
+            <tr>
+                <th>Hostname</th>
+                <td>{{ system_info.hostname }}</td>
+            </tr>
+            <tr>
+                <th>IP Address</th>
+                <td>{{ system_info.ip }}</td>
+            </tr>
+            <tr>
+                <th>Uptime</th>
+                <td>{{ system_info.uptime }}</td>
+            </tr>
+        </table>
+
+        <h2>CPU Usage</h2>
+        <table>
+            <tr>
+                <th>CPU Percent</th>
+                <td>{{ system_info.cpu_percent }}%</td>
+            </tr>
+        </table>
+
+        <h2>Memory Usage</h2>
+        <table>
+            <tr>
+                <th>Total Memory</th>
+                <td>{{ system_info.memory.total / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Used Memory</th>
+                <td>{{ system_info.memory.used / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Free Memory</th>
+                <td>{{ system_info.memory.free / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Memory Usage</th>
+                <td>{{ system_info.memory.percent }}%</td>
+            </tr>
+        </table>
+
+        <h2>Disk Usage</h2>
+        <table>
+            <tr>
+                <th>Total Disk</th>
+                <td>{{ system_info.disk.total / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Used Disk</th>
+                <td>{{ system_info.disk.used / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Free Disk</th>
+                <td>{{ system_info.disk.free / (1024 * 1024 * 1024) }} GB</td>
+            </tr>
+            <tr>
+                <th>Disk Usage</th>
+                <td>{{ system_info.disk.percent }}%</td>
+            </tr>
+        </table>
+
+        <h2>Load Average</h2>
+        <table>
+            <tr>
+                <th>1 Min</th>
+                <td>{{ system_info.load_avg[0] }}</td>
+            </tr>
+            <tr>
+                <th>5 Min</th>
+                <td>{{ system_info.load_avg[1] }}</td>
+            </tr>
+            <tr>
+                <th>15 Min</th>
+                <td>{{ system_info.load_avg[2] }}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -29,3 +29,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 9. [⛆ QR code generator](https://github.com/epcgrs/100daysofcode/tree/main/009): A Simple QR code text generator made with PHP.
 
 10. [🪙 Bitcoin Taproot address generator](https://github.com/epcgrs/100daysofcode/tree/main/010): A generator for Bitcoin Taproot addresses. It generates a new address every time you refresh the page.
+
+11. [📊 System Monitor](https://github.com/epcgrs/100daysofcode/tree/main/011): A simple python system monitoring tool that shows the CPU and memory usage of your system.

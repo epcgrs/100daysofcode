@@ -1,0 +1,15 @@
+[Unit]
+Description=Monitor Server
+After=network.target
+
+[Service]
+ExecStart=/home/user/projects/monitor_server/venv/bin/python /home/user/projects/monitor_server/app.py
+WorkingDirectory=/home/user/projects/monitor_server/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=user
+Group=user
+
+[Install]
+WantedBy=multi-user.target
