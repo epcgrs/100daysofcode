@@ -31,3 +31,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 10. [🪙 Bitcoin Taproot address generator](https://github.com/epcgrs/100daysofcode/tree/main/010): A generator for Bitcoin Taproot addresses. It generates a new address every time you refresh the page.
 
 11. [📊 System Monitor](https://github.com/epcgrs/100daysofcode/tree/main/011): A simple python system monitoring tool that shows the CPU and memory usage of your system.
+
+12. [📜 Text Adventure Game](https://github.com/epcgrs/100daysofcode/tree/main/012): A simple text-based adventure game built with PHP.

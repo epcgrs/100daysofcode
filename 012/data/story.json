@@ -1,0 +1,39 @@
+{
+    "start": {
+        "text": "Você está diante da Floresta Negra. Uma neblina densa cobre a entrada.",
+        "choices": {
+            "enter": { "text": "Entrar na floresta", "next_scene": "forest" },
+            "camp": { "text": "Acampar do lado de fora", "next_scene": "camp" }
+        }
+    },
+    "forest": {
+        "text": "Você caminha pela floresta e escuta uivos ao longe. Dois caminhos surgem.",
+        "choices": {
+            "left": { "text": "Seguir pela trilha da esquerda", "next_scene": "wolves" },
+            "right": { "text": "Seguir pela trilha da direita", "next_scene": "castle" }
+        }
+    },
+    "camp": {
+        "text": "Durante a noite, você é atacado por bandidos. Você foi derrotado. Fim.",
+        "choices": {}
+    },
+    "wolves": {
+        "text": "Uma alcateia de lobos aparece! Você tenta lutar, mas são muitos. Você foi derrotado. Fim.",
+        "choices": {}
+    },
+    "castle": {
+        "text": "Você encontra um antigo castelo escondido na floresta. Dentro, um tesouro reluz.",
+        "choices": {
+            "take": { "text": "Pegar o tesouro", "next_scene": "win" },
+            "leave": { "text": "Sair sem tocar em nada", "next_scene": "lose" }
+        }
+    },
+    "win": {
+        "text": "Parabéns! Você encontrou o tesouro lendário da Floresta Negra e triunfou!",
+        "choices": {}
+    },
+    "lose": {
+        "text": "Você parte, mas um feitiço ancestral transforma você em pedra. Você foi derrotado. Fim.",
+        "choices": {}
+    }
+}
