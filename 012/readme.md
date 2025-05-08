@@ -13,7 +13,7 @@ A simple text adventure game written in PHP. The game is a basic implementation 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/100daysOfCode.git
+    git clone https://github.com/epcgrs/100daysofcode.git
     cd 100daysOfCode/011
     ```
 2. **Run Python Server**
@@ -75,7 +75,7 @@ A simple text adventure game written in PHP. The game is a basic implementation 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/100daysOfCode.git
+    git clone https://github.com/epcgrs/100daysofcode.git
     cd 100daysOfCode/011
     ```
 2. **Run Python Server**
@@ -137,7 +137,7 @@ A simple text adventure game written in PHP. The game is a basic implementation 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/100daysOfCode.git
+    git clone https://github.com/epcgrs/100daysofcode.git
     cd 100daysOfCode/011
     ```
 2. **Run Python Server**
@@ -199,7 +199,7 @@ A simple text adventure game written in PHP. The game is a basic implementation 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/100daysOfCode.git
+    git clone https://github.com/epcgrs/100daysofcode.git
     cd 100daysOfCode/012
     ```
 2. **Run PHP Server**
