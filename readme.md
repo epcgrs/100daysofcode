@@ -35,3 +35,5 @@ The goal is to keep active and solve simple problems as best as possible by lear
 12. [📜 Text Adventure Game](https://github.com/epcgrs/100daysofcode/tree/main/012): A simple text-based adventure game built with PHP.
 
 13. [📝 Form Builder with Conditional Logic](https://github.com/epcgrs/100daysofcode/tree/main/013): A Dynamic form builder app where users can create form, form inputs and conditional logic. 
+
+14. [🔑 Password Generator](https://github.com/epcgrs/100daysofcode/tree/main/014): A simple password generator that creates secure passwords based on user-defined criteria.
