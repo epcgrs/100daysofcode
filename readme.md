@@ -36,4 +36,6 @@ The goal is to keep active and solve simple problems as best as possible by lear
 
 13. [📝 Form Builder with Conditional Logic](https://github.com/epcgrs/100daysofcode/tree/main/013): A Dynamic form builder app where users can create form, form inputs and conditional logic. 
 
-14. [🔑 Password Generator](https://github.com/epcgrs/100daysofcode/tree/main/014): A simple password generator that creates secure passwords based on user-defined criteria.
+14. [🔑 Password Generator](https://github.com/epcgrs/100daysofcode/tree/main/014): A simple password generator that creates secure passwords based on user-defined criteria. (LOW ENTROPY)
+
+15. [🔑 Password Generator - High Entropy](https://github.com/epcgrs/100daysofcode/tree/main/015): A simple password generator that creates secure passwords based on user-defined criteria with `secrets` lib. (HIGH ENTROPY)

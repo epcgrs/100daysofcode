@@ -1,14 +1,15 @@
-# Python Password Generator
+# Python Password Generator - Low Entropy
 
-A simple password generator written in Python. The program generates secure passwords based on user-defined criteria.
+A simple password generator written in Python. The program generates low entropy passwords based on user-defined criteria.
 
 ## What I learned
 - How to use Python to create a password generator.
 - Implement user input for password criteria.
-- Generate secure passwords using randomization.
-- Use libraries such as `random` and `string` for password generation.
+- Generate insecure passwords using randomization.
+- Use libraries such as `random` (insecure for password generation) and `string` for password generation.
 - Concatenate the pool of rules to create a password.
 
+- See `100daysOfCode/015/secure_password_generator.py` for a more secure password generator.
 
 ## How to Run
 
