@@ -39,3 +39,8 @@ The goal is to keep active and solve simple problems as best as possible by lear
 14. [🔑 Password Generator](https://github.com/epcgrs/100daysofcode/tree/main/014): A simple password generator that creates secure passwords based on user-defined criteria. (LOW ENTROPY)
 
 15. [🔑 Password Generator - High Entropy](https://github.com/epcgrs/100daysofcode/tree/main/015): A simple password generator that creates secure passwords based on user-defined criteria with `secrets` lib. (HIGH ENTROPY)
+
+16. [💻 Terminal Portfolio](https://github.com/epcgrs/100daysofcode/tree/main/016): A terminal-style portfolio website with interactive commands. Built with HTML, CSS, and JavaScript featuring commands like whoami, about, projects, stack, and easter eggs including a Matrix effect.
+
+17. [📊 Fortuna](https://github.com/epcgrs/100daysofcode/tree/main/017): A python bash clone of fortune comand on linux, display a random motivation phrase.
+

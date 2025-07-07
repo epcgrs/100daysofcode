@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Terminal Simulado</title>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/terminus');
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 2rem;
+      white-space: pre-wrap;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: #00ff00;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .box {
+      border: 1px solid #00ff00;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+    #terminal {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    input {
+      background: none;
+      border: none;
+      color: #00ff00;
+      font-family: 'Fira Code', monospace;
+      font-size: 1rem;
+      outline: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <div style="display: flex; align-items: center;">
+    <span style="color: #00ff00; font-family: 'Fira Code', monospace;">$: </span>
+    <input id="input" autofocus />
+  </div>
+
+  <script>
+    const terminal = document.getElementById('terminal');
+    const input = document.getElementById('input');
+
+    const commands = {
+      help: `
+Comandos disponíveis:
+- whoami: Exibe informações sobre você.
+- about: Exibe uma descrição sobre você.
+- projects: Lista seus projetos.
+- stack: Mostra sua stack de tecnologias.
+- connect --with me: Exibe formas de contato.
+- clear: Limpa o terminal.
+      `,
+      whoami: 'Emmanuel Pereira Pires',
+      about: 'Fullstack dev com 8 anos de experiência. Especialista em Laravel, Node.js, Bitcoin, e projetos de integração.',
+      projects: `
+- Upgrade: Laravel + Vue.js - Projeto de gerenciamento de alarmes e acesso torres de telefonia,
+- Sineiro: Laravel + React.js - Projeto de busca de igrejas e horários de missa perto do usuário,
+- ZZNET (Arezzo) - Participei da Estruturação, atualização de versão PHP 5.3 para 8.2 e reformulação do sistema para Vue.js e Laravel usando Tailwind CSS como framework CSS,
+- Sistema de Condomínios Melnick - Apresentações, candidaturas e Votação em cargos condominais, com Laravel,
+- Ecommerces Sandalias Colombo - Atuação e Desenvolvimento em lojas Woocommerce na Colombia, Sandalias Colombia, Rider, Ipanema, Grendene,
+- Sistemas de Quiz - Desenvolvimento de sistemas de quiz para eventos, com Laravel, clientes como Massey Feurgunson, Yara Café, entre outros,
+- sistema de treinamentos de funcionários - Desenvolvimento de sistemas de treinamentos para funcionários em formato de módulos e cursos, com Laravel,
+- Sites Institucionais - Desenvolvimento de sites institucionais para empresas como Yara Café, Positron, Melnick, Grupos Sinosserra, Banricoop, CMPC, Garibaldo, Salton, entre outros, com WordPress Temas e Plugins personalizados,
+- Sites para captação de Leads - Desenvolvimento de sites para captação de leads, com WordPress Temas e Plugins personalizados, `,
+      stack: `
+Frontend: HTML, CSS, JavaScript, React.js, Vue.js, Boostrap, Tailwind CSS,
+Backend: PHP, Laravel, Node.js, Python, Django, Express.js,
+Banco de Dados: MySQL, PostgreSQL, MongoDB,
+DevOps: Docker, Git, 
+Mobile: React Native,
+Outros: WordPress, WooCommerce, APIs RESTful, WebSockets,
+      `,
+      'connect --with me': `
+GitHub: https://github.com/epcgrs
+Email: emmanuelf988@gmail.com
+WhatsApp: +55 51 983505993
+      `,
+      matrix: '',
+      clear: '',
+    };
+
+    function printToTerminal(text) {
+      const line = document.createElement('div');
+      line.textContent = text;
+      terminal.appendChild(line);
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+
+
+    function startMatrixEffect() {
+      terminal.innerHTML = ''; // Limpa o terminal
+      const interval = setInterval(() => {
+        const line = document.createElement('div');
+        line.textContent = Array(50)
+          .fill(0)
+          .map(() => String.fromCharCode(0x30a0 + Math.random() * 96))
+          .join('');
+        terminal.appendChild(line);
+        terminal.scrollTop = terminal.scrollHeight;
+      }, 100);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        terminal.innerHTML = ''; // Limpa o terminal após o efeito
+        printToTerminal('Modo Matrix finalizado. Digite "help" para voltar.');
+      }, 5000); // Dura 5 segundos
+    }
+
+    function startMatrixEffect() {
+      terminal.innerHTML = ''; // Limpa o terminal
+      const interval = setInterval(() => {
+        const line = document.createElement('div');
+        line.textContent = Array(50)
+          .fill(0)
+          .map(() => String.fromCharCode(0x30a0 + Math.random() * 96))
+          .join('');
+        terminal.appendChild(line);
+        terminal.scrollTop = terminal.scrollHeight;
+      }, 100);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        terminal.innerHTML = ''; // Limpa o terminal após o efeito
+        printToTerminal('Modo Matrix finalizado. Digite "help" para voltar.');
+      }, 5000); // Dura 5 segundos
+    }
+
+    function executeCommand(command) {
+      if (command === 'clear') {
+        terminal.innerHTML = ''; 
+        printToTerminal('Bem-vindo ao meu portfólio !');
+        printToTerminal('Digite "help" para ver os comandos disponíveis.');
+        return;
+      }
+
+      if (command === 'matrix') {
+        printToTerminal(commands.matrix);
+        startMatrixEffect();
+        return;
+      }
+      const output = commands[command] || `Comando não encontrado: ${command}`;
+      printToTerminal(`$: ${command}`);
+      printToTerminal(output);
+    }
+
+    printToTerminal('Bem-vindo ao meu portfólio !');
+    printToTerminal('Digite "help" para ver os comandos disponíveis.');
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const command = input.value.trim();
+        input.value = '';
+        executeCommand(command);
+      }
+    });
+
+
+    document.addEventListener('click', () => {
+      input.focus();
+    });
+  </script>
+</body>
+</body>
+</html>
