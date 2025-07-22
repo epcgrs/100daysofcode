@@ -44,3 +44,8 @@ The goal is to keep active and solve simple problems as best as possible by lear
 
 17. [📊 Fortuna](https://github.com/epcgrs/100daysofcode/tree/main/017): A python bash clone of fortune comand on linux, display a random motivation phrase.
 
+18. [💰 Converter](https://github.com/epcgrs/100daysofcode/tree/main/018): A simple Bitcoin converter that converts fiat to BTC using the CoinGecko API.
+
+19. [💰 Monitor](https://github.com/epcgrs/100daysofcode/tree/main/019): A Bitcoin price monitor that fetches the current price in a chosen fiat currency and displays it in a user-friendly format.
+
+20. [🧮 Calculator in C++](https://github.com/epcgrs/100daysofcode/tree/main/020): A simple calculator program that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
