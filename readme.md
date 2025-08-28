@@ -49,3 +49,7 @@ The goal is to keep active and solve simple problems as best as possible by lear
 19. [💰 Monitor](https://github.com/epcgrs/100daysofcode/tree/main/019): A Bitcoin price monitor that fetches the current price in a chosen fiat currency and displays it in a user-friendly format.
 
 20. [🧮 Calculator in C++](https://github.com/epcgrs/100daysofcode/tree/main/020): A simple calculator program that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+21. [🔎 Text Analyzer in C++](https://github.com/epcgrs/100daysofcode/tree/main/021): A CLI tool that reads a text file (texto.txt), normalizes words (lowercase, strips punctuation), counts lines and words, and reports the most frequent terms.
+
+22. [🦀 Rust Hello CLI](https://github.com/epcgrs/100daysofcode/tree/main/022): A minimal Rust project (main.rs) that prints a greeting and serves as a basic CLI scaffold to explore Rust’s tooling.
